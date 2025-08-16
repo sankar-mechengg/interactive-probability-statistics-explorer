@@ -1,8 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📊 Interactive Probability & Statistics Explorer
 
-## Getting Started
+A comprehensive interactive web application designed to help students, researchers, and professionals master probability distributions, statistical concepts, and advanced analytics through hands-on visualizations, simulations, and real-world applications.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-15.4.6-black?style=flat-square&logo=next.js)
+![React](https://img.shields.io/badge/React-19.1.0-blue?style=flat-square&logo=react)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+
+## 🎯 Features
+
+### 📈 Probability Distributions (11 Interactive)
+
+- **Bernoulli Distribution** - Coin flip modeling
+- **Binomial Distribution** - Multiple trial scenarios
+- **Poisson Distribution** - Event rate modeling
+- **Normal/Gaussian Distribution** - The famous bell curve
+- **Exponential Distribution** - Time between events
+- **Uniform Distribution** - Equal probability outcomes
+- **Geometric Distribution** - First success modeling
+- **Gamma Distribution** - Shape and rate parameters
+- **Beta Distribution** - Uncertainty modeling
+- **Laplace Distribution** - Double exponential
+- **Multinomial Distribution** - Multiple category outcomes
+
+### 🧠 Interactive Visualizations
+
+- **Bayes Calculator** - Interactive Bayes' Theorem with medical diagnosis examples
+- **Central Limit Demo** - Watch sample means become normally distributed
+- **Conditional Probability Visualizer** - Venn diagrams and real-world scenarios
+
+### 🔬 Advanced Statistical Concepts
+
+- **Markov Chain Simulator** - State transition modeling with weather/stock examples
+- **Hypothesis Testing Dashboard** - Type I/II errors, power curves, and statistical tests
+- **Maximum Likelihood Estimation** - Parameter estimation with visual likelihood functions
+
+### 📊 Advanced Analytics
+
+- **Joint Distribution Explorer** - Bivariate normal distributions with correlation analysis
+- **Time Series Explorer** - Random walks, mean reversion, and stochastic processes
+- **Bayesian Inference Workshop** - Prior to posterior belief updating
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18.x or later
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/sankar-mechengg/interactive-probability-statistics-explorer.git
+cd interactive-probability-statistics-explorer
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
@@ -14,23 +78,101 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🏗️ Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── globals.css          # Global styles
+│   ├── layout.js            # Root layout component
+│   └── page.jsx             # Main application page
+├── components/
+│   ├── AdvancedConcepts.jsx      # Markov chains, hypothesis testing, MLE
+│   ├── InteractiveVisualizations.jsx # Bayes calculator, CLT demo, conditional probability
+│   └── StatisticalConcepts.jsx   # Joint distributions, time series, Bayesian inference
+└── lib/
+    └── engine.js            # Core probability distribution engine
+```
 
-## Learn More
+## 🎓 Educational Value
 
-To learn more about Next.js, take a look at the following resources:
+This application is designed for:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Students** learning probability and statistics
+- **Researchers** exploring statistical concepts
+- **Professionals** working with data analysis
+- **Educators** teaching statistical concepts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Key Learning Outcomes:
 
-## Deploy on Vercel
+- Understanding probability distribution shapes and parameters
+- Visualizing the Central Limit Theorem in action
+- Exploring Bayesian thinking and belief updating
+- Understanding correlation vs. causation
+- Learning about stochastic processes and time series
+- Mastering hypothesis testing concepts
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Technologies Used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Frontend Framework**: Next.js 15.4.6
+- **UI Library**: React 19.1.0
+- **Styling**: CSS3 with custom components
+- **Visualizations**: HTML5 Canvas API
+- **Mathematics**: Custom JavaScript implementations
+- **Simulations**: Monte Carlo methods
+
+## 🎨 Key Features in Detail
+
+### Real-time Parameter Adjustment
+
+All distributions and simulations feature interactive sliders and controls that update visualizations in real-time.
+
+### Canvas-based Visualizations
+
+High-performance rendering using HTML5 Canvas for smooth animations and responsive charts.
+
+### Monte Carlo Simulations
+
+Each distribution includes simulation capabilities to demonstrate law of large numbers.
+
+### Educational Explanations
+
+Each concept includes practical examples and real-world applications.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Author
+
+**Sankar Balasubramanian**
+
+- Website: [sankar.studio](https://www.sankar.studio)
+- GitHub: [@sankar-mechengg](https://github.com/sankar-mechengg)
+- LinkedIn: [Sankar Balasubramanian](https://www.linkedin.com/in/sankar-balasubramanian)
+
+## 🔗 Useful Resources
+
+- [Probability Distributions (Wikipedia)](https://en.wikipedia.org/wiki/Probability_distribution)
+- [Khan Academy Statistics](https://www.khanacademy.org/math/statistics-probability)
+- [Next.js Documentation](https://nextjs.org/docs)
+
+## 🚀 Deployment
+
+The easiest way to deploy this Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme):
+
+1. Push your code to GitHub
+2. Import your repository on Vercel
+3. Vercel will automatically detect it's a Next.js app and deploy it
+
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+---
+
+⭐ **If you find this project helpful, please consider giving it a star on GitHub!**
