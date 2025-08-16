@@ -497,9 +497,6 @@ body > .floating-gastly,
   position: fixed !important;
   pointer-events: auto !important;
   isolation: isolate !important; /* Create new stacking context */
-  border: 3px solid rgba(255, 0, 255, 0.8) !important; /* Debug border */
-  border-radius: 50% !important;
-  background: rgba(255, 255, 255, 0.1) !important;
 }
 
 /* Ensure all elements within Gastly maintain high z-index */
